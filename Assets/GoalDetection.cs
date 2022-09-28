@@ -5,26 +5,25 @@ using UnityEngine;
 public class GoalDetection : MonoBehaviour
 {
 	public string goalColour;
-	public ScoreBoard addPoints;
 
+	public delegate void RedScored();
+	public event RedScored RedGoal;
+	
+	public delegate void BlueScored();
+	public event BlueScored BlueGoal;
+	
 	void OnTriggerEnter(Collider ball)
 	{
 		if(ball.gameObject.GetComponent<Ball>() != null)
 		{
-			Goal();
+			if (goalColour == "red")
+			{
+				BlueGoal?.Invoke();
+			} 
+			else if (goalColour == "blue")
+			{
+				RedGoal?.Invoke();
+			}
 		}
-	}
-	
-	void Goal()
-	{
-		if(goalColour == "red")
-		{
-			addPoints.GoalScored("blue");			
-		}
-		else if(goalColour == "blue")
-		{
-			addPoints.GoalScored("red");
-		}
-
 	}
 }

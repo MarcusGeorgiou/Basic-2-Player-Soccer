@@ -11,10 +11,10 @@ public enum Teams
 
 public class GoalDetection : MonoBehaviour
 {
+	public Teams myTeam;
+	
 	public delegate void GoalScored(GoalDetection goal);
 	public event GoalScored GoalEvent;
-
-	void 
 
 	void OnTriggerEnter(Collider ball)
 	{

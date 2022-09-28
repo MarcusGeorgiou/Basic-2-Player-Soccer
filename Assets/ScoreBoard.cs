@@ -18,18 +18,19 @@ public class ScoreBoard : MonoBehaviour
 		}
 	}
 
-	void RedPoint()
+	private void PointScored(GoalDetection goalDetection)
 	{
-		redScore++;
-		print("Red Scored A Goal!!!");
-		print("They Now Have: " + redScore + " Points");
-
-	}
-
-	void BluePoint()
-	{
-		blueScore++;
-		print("Blue Scored A Goal!!!");
-		print("They Now Have: " + blueScore + " Points");
+		if (goalDetection.myTeam == Teams.Red)
+		{
+			blueScore++;
+			print("Blue Scored A Goal!!!");
+			print("They Now Have: " + blueScore + " Points");
+		}
+		else if (goalDetection.myTeam == Teams.Blue)
+		{
+			redScore++;
+			print("Red Scored A Goal!!!");
+			print("They Now Have: " + redScore + " Points");
+		}
 	}
 }

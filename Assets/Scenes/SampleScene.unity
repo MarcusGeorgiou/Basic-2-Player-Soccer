@@ -801,6 +801,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35b5eb33fc475a54eb6650aa0555be56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goal:
+  - {fileID: 1193222214}
+  - {fileID: 2136722532}
 --- !u!1 &906745580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1092,7 +1095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9955090f0c3574396eb3b15debb113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goalColour: blue
+  myTeam: 1
 --- !u!1 &1381171078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,7 +1125,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aecbf020d82855e4b8e02be874f4d004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goal: {fileID: 0}
+  goal:
+  - {fileID: 2136722532}
+  - {fileID: 1193222214}
 --- !u!4 &1381171080
 Transform:
   m_ObjectHideFlags: 0
@@ -1875,4 +1880,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e9955090f0c3574396eb3b15debb113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  goalColour: red
+  myTeam: 0

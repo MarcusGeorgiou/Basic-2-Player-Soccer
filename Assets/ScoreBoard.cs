@@ -8,15 +8,15 @@ public class ScoreBoard : MonoBehaviour
 	int redScore = 0;
 	int blueScore = 0;
 
-	public GoalDetection[] goal = new GoalDetection[2];
+	public List<GoalDetection> goal;
 
 	private void OnEnable()
 	{
-		goal.RedGoal += RedScored;
-		goal.BlueGoal += BlueScored;
+		goal.RedGoal += RedPoint;
+		goal.BlueGoal += BluePoint;
 	}
 
-	void RedScored()
+	void RedPoint()
 	{
 		redScore++;
 		print("Red Scored A Goal!!!");
@@ -24,7 +24,7 @@ public class ScoreBoard : MonoBehaviour
 
 	}
 
-	void BlueScored()
+	void BluePoint()
 	{
 		blueScore++;
 		print("Blue Scored A Goal!!!");

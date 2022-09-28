@@ -8,12 +8,14 @@ public class ScoreBoard : MonoBehaviour
 	int redScore = 0;
 	int blueScore = 0;
 
-	public List<GoalDetection> goal;
+	public GoalDetection[] goal;
 
 	private void OnEnable()
 	{
-		goal.RedGoal += RedPoint;
-		goal.BlueGoal += BluePoint;
+		foreach (GoalDetection item in goal)
+		{
+			item.GoalEvent += PointScored;
+		}
 	}
 
 	void RedPoint()

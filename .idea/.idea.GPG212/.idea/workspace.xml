@@ -7,6 +7,9 @@
     <list default="true" id="4b34fbf5-1f86-4985-b54f-46edc1e3682b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GPG212/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GPG212/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/GoalDetection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GoalDetection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScoreBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScoreBoard.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +78,7 @@
       <updated>1664326490153</updated>
       <workItem from="1664326519987" duration="5943000" />
       <workItem from="1664333053083" duration="772000" />
+      <workItem from="1664337943668" duration="2950000" />
     </task>
     <servers />
   </component>

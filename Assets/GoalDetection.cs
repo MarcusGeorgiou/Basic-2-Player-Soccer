@@ -1,30 +1,26 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum Teams
+{
+	Red,
+	Blue
+}
+
 public class GoalDetection : MonoBehaviour
 {
-	public string goalColour;
-	public ScoreBoard addPoints;
+	public delegate void GoalScored(GoalDetection goal);
+	public event GoalScored GoalEvent;
+
+	void 
 
 	void OnTriggerEnter(Collider ball)
 	{
-		if(ball.gameObject.GetComponent<Ball>() != null)
+		if (ball.gameObject.GetComponent<Ball>() != null)
 		{
-			Goal();
+			GoalEvent?.Invoke(this);
 		}
-	}
-	
-	void Goal()
-	{
-		if(goalColour == "red")
-		{
-			addPoints.GoalScored("blue");			
-		}
-		else if(goalColour == "blue")
-		{
-			addPoints.GoalScored("red");
-		}
-
 	}
 }

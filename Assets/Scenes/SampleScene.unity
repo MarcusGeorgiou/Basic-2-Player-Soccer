@@ -787,7 +787,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &905787505
 MonoBehaviour:
@@ -1072,13 +1072,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1193222209}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.5, y: 0.95, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 9.5, y: 0.95000005, z: 0}
   m_LocalScale: {x: 0.83755, y: 2, z: 6.6196003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1193222214
 MonoBehaviour:
@@ -1093,7 +1093,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goalColour: blue
-  addPoints: {fileID: 1381171079}
 --- !u!1 &1381171078
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,6 +1122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aecbf020d82855e4b8e02be874f4d004, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goal: {fileID: 0}
 --- !u!4 &1381171080
 Transform:
   m_ObjectHideFlags: 0
@@ -1855,13 +1855,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136722527}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.57, y: 0.95, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -9.57, y: 0.95000005, z: 0}
   m_LocalScale: {x: 0.83755, y: 2, z: 6.6196003}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2136722532
 MonoBehaviour:
@@ -1876,4 +1876,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   goalColour: red
-  addPoints: {fileID: 1381171079}

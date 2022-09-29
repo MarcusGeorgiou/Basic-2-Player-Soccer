@@ -22,6 +22,7 @@ public class RedPlayer : MonoBehaviour
         {
             Vector3 redMove = new Vector3(Input.GetAxis("HorizRed"), 0, Input.GetAxis("VertRed"));
             rb.AddForce(redMove * speed * Time.deltaTime);
+            
         }
 
         if (myTeam == Teams.Blue)

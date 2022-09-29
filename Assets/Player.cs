@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RedPlayer : MonoBehaviour
+public class Player : MonoBehaviour
 {
     public Teams myTeam;
 

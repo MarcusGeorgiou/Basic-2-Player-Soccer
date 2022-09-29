@@ -7,8 +7,7 @@
     <list default="true" id="4b34fbf5-1f86-4985-b54f-46edc1e3682b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GPG212/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GPG212/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Supporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Supporter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Supporter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Supporter.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ScoreBoard.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ScoreBoard.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,10 +59,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="15860">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="15860" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -83,7 +82,7 @@
       <workItem from="1664333053083" duration="772000" />
       <workItem from="1664337943668" duration="2950000" />
       <workItem from="1664343532659" duration="4813000" />
-      <workItem from="1664410345943" duration="5981000" />
+      <workItem from="1664410345943" duration="13123000" />
     </task>
     <servers />
   </component>

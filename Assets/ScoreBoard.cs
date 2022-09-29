@@ -10,6 +10,9 @@ public class ScoreBoard : MonoBehaviour
 
 	public GoalDetection[] goal;
 
+	public delegate void UpdateScore(int newScore, GoalDetection goal);
+	public event UpdateScore UIEvent;
+
 	private void OnEnable()
 	{
 		foreach (GoalDetection item in goal)
@@ -25,12 +28,16 @@ public class ScoreBoard : MonoBehaviour
 			blueScore++;
 			print("Blue Scored A Goal!!!");
 			print("They Now Have: " + blueScore + " Points");
+			
+			UIEvent?.Invoke(blueScore, goalDetection);
 		}
 		else if (goalDetection.myTeam == Teams.Blue)
 		{
 			redScore++;
 			print("Red Scored A Goal!!!");
 			print("They Now Have: " + redScore + " Points");
+
+			UIEvent?.Invoke(redScore, goalDetection);
 		}
 	}
 }

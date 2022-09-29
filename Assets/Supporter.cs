@@ -12,10 +12,15 @@ public class Supporter : MonoBehaviour
 	private Rigidbody rb;
 	private MeshRenderer mr;
 	public Material[] teams;
+
+	public GoalDetection[] goal;
 	
 	private void OnEnable()
 	{
-		
+		foreach (GoalDetection item in goal)
+		{
+			item.GoalEvent += Cheer;
+		}
 	}
 
 	private void Awake()
@@ -55,6 +60,14 @@ public class Supporter : MonoBehaviour
 	    {
 		    jumpTimer = 1.1f;
 		    rb.AddForce(0, Random.Range(50, 120), 0);
+	    }
+    }
+
+    void Cheer(GoalDetection goal)
+    {
+	    if (goal.myTeam != myTeam)
+	    {
+		    rb.AddForce(0, 300, 0);
 	    }
     }
 }

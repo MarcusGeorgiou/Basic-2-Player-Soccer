@@ -131,3 +131,6 @@ MonoBehaviour:
   teams:
   - {fileID: 2100000, guid: 565db68a59fa1864c9130124d3991b80, type: 2}
   - {fileID: 2100000, guid: 5a66aac7ba9053a40a4e5f757e7630ad, type: 2}
+  goal:
+  - {fileID: 2257615329387781410, guid: 1460ff3cbbdb82643b6ea1ff9414405b, type: 3}
+  - {fileID: 2257615329387781410, guid: 1460ff3cbbdb82643b6ea1ff9414405b, type: 3}

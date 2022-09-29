@@ -6,12 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="4b34fbf5-1f86-4985-b54f-46edc1e3682b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GPG212/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GPG212/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BluePlayer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/BluePlayer.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Supporter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Supporter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Supporter.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Supporter.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +83,7 @@
       <workItem from="1664333053083" duration="772000" />
       <workItem from="1664337943668" duration="2950000" />
       <workItem from="1664343532659" duration="4813000" />
-      <workItem from="1664410345943" duration="4982000" />
+      <workItem from="1664410345943" duration="5981000" />
     </task>
     <servers />
   </component>

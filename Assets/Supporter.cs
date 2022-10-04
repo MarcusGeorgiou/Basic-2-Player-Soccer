@@ -19,7 +19,7 @@ public class Supporter : MonoBehaviour
 	{
 		foreach (GoalDetection item in goal)
 		{
-			item.GoalEvent += Cheer;
+			item.GoalEvent += React;
 		}
 	}
 
@@ -63,11 +63,11 @@ public class Supporter : MonoBehaviour
 	    }
     }
 
-    void Cheer(GoalDetection goal)
+    void React(GoalDetection goal)
     {
 	    if (goal.myTeam != myTeam)
 	    {
 		    rb.AddForce(0, 300, 0);
-	    }
+	    } 
     }
 }

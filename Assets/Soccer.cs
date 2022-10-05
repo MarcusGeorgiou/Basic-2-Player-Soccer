@@ -39,7 +39,7 @@ public partial class @Soccer : IInputActionCollection2, IDisposable
             ],
             ""bindings"": [
                 {
-                    ""name"": ""BlueInput"",
+                    ""name"": ""RedInput"",
                     ""id"": ""823dd72a-7c64-439f-a36b-cbd8871fbae5"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
@@ -94,7 +94,7 @@ public partial class @Soccer : IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""RedInput"",
+                    ""name"": ""BlueInput"",
                     ""id"": ""d37961ed-422c-41ac-a020-948d19d8f091"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",

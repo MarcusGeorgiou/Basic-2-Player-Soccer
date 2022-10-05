@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
@@ -9,8 +10,17 @@ public class Player : MonoBehaviour
 
     private Rigidbody rb;
     public float speed;
+    
+    Soccer controls = new Soccer();
 
-    private void Start()
+    void OnEnable()
+    {
+        controls.Player.Enable();
+
+        controls.Player.Move.performed += MovePlayer;
+    }
+
+    void Start()
     {
         rb = this.GetComponent<Rigidbody>();
     }
@@ -18,7 +28,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (myTeam == Teams.Red)
+        /*if (myTeam == Teams.Red)
         {
             Vector3 redMove = new Vector3(Input.GetAxis("HorizRed"), 0, Input.GetAxis("VertRed"));
             rb.AddForce(redMove * speed * Time.deltaTime);
@@ -29,6 +39,12 @@ public class Player : MonoBehaviour
         {
             Vector3 blueMove = new Vector3(Input.GetAxis("HorizBlue"), 0, Input.GetAxis("VertBlue"));
             rb.AddForce(blueMove * speed * Time.deltaTime);
+        }
+        */
+
+        void MovePlayer()
+        {
+            print("Moved");
         }
     }
 }

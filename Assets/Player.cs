@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
         {
             //Vector3 redMove = new Vector3(Input.GetAxis("HorizRed"), 0, Input.GetAxis("VertRed"));
             Vector3 rVelocity = new Vector3(redMove.x, 0, redMove.y);
-            rb.AddForce(redMove * speed * Time.deltaTime);
+            rb.AddForce(rVelocity * speed * Time.deltaTime);
         }
 
         if (myTeam == Teams.Blue)

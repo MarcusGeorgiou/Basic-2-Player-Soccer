@@ -1590,7 +1590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTeam: 1
-  speed: 3500
+  speed: 350
 --- !u!114 &767383192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2115,7 +2115,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24678
+  m_Name: pb_Mesh37580
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -4993,7 +4993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myTeam: 0
-  speed: 3500
+  speed: 350
 --- !u!114 &2054746465
 MonoBehaviour:
   m_ObjectHideFlags: 0

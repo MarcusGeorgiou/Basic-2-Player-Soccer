@@ -11,10 +11,11 @@ public class Player : MonoBehaviour
     private Rigidbody rb;
     public float speed;
     
-    Soccer controls = new Soccer();
+    Soccer controls;
 
-    void OnEnable()
+    void Awake()
     {
+        controls = new Soccer();
         controls.Player.Enable();
 
         controls.Player.Move.performed += MovePlayer;
@@ -41,10 +42,13 @@ public class Player : MonoBehaviour
             rb.AddForce(blueMove * speed * Time.deltaTime);
         }
         */
-
-        void MovePlayer()
-        {
-            print("Moved");
-        }
+    }
+    
+    void MovePlayer(InputAction.CallbackContext input)
+    {
+        print("Moved");
+        print(input);
+        
+        //Something to move players on x and z axes
     }
 }

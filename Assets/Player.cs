@@ -13,53 +13,38 @@ public class Player : MonoBehaviour
     
     Soccer controls;
 
-    private Vector2 redMove;
-    private Vector2 blueMove;
-
+    private Vector2 moveValue;
     void Awake()
     {
         controls = new Soccer();
         controls.Player.Enable();
 
-        controls.Player.Move.performed += MovePlayer;
+        if (myTeam == Teams.Red)
+        {
+            controls.Player.RedMove.performed += MovePlayer;
+            controls.Player.RedMove.canceled += MovePlayer;
+        }
+        else if(myTeam == Teams.Blue)
+        {
+            controls.Player.BlueMove.performed += MovePlayer;
+            controls.Player.BlueMove.canceled += MovePlayer;
+        }
     }
 
     void Start()
     {
-        rb = this.GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        if (myTeam == Teams.Red)
-        {
-            //Vector3 redMove = new Vector3(Input.GetAxis("HorizRed"), 0, Input.GetAxis("VertRed"));
-            Vector3 rVelocity = new Vector3(redMove.x, 0, redMove.y);
-            rb.AddForce(rVelocity * speed * Time.deltaTime);
-        }
-
-        if (myTeam == Teams.Blue)
-        {
-            //Vector3 blueMove = new Vector3(Input.GetAxis("HorizBlue"), 0, Input.GetAxis("VertBlue"));
-            Vector3 bVelocity = new Vector3(blueMove.x, 0, blueMove.y);
-            rb.AddForce(bVelocity * speed * Time.deltaTime);
-        }
-        
+            Vector3 velocity = new Vector3(moveValue.x, 0, moveValue.y);
+            rb.AddForce(velocity * speed);
     }
     
     void MovePlayer(InputAction.CallbackContext input)
     {
-        print("Moved");
-        print(input);
-
-        if (myTeam == Teams.Blue)
-        {
-            blueMove = input.ReadValue<Vector2>();
-        }
-        else if (myTeam == Teams.Red)
-        {
-            redMove = input.ReadValue<Vector2>();
-        }
+        moveValue = input.ReadValue<Vector2>();
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject player;
+    private bool playerSpawned;
     
     public static GameManager instance;
     private void Awake()
@@ -12,8 +13,29 @@ public class GameManager : MonoBehaviour
         instance = this;
     }
 
-    public void spawn()
+    public void KeyPressed()
+    {
+        if (playerSpawned)
+        {
+            ChangeColour();
+        }
+        else
+        {
+            Spawn();
+        }
+    }
+    
+    private void Spawn()
     {
         Instantiate(player, transform.position, Quaternion.identity);
+        playerSpawned = true;
+    }
+
+    public delegate void ChangeColourEvent();
+    public event ChangeColourEvent changeColourEvent;
+    
+    private void ChangeColour()
+    {
+        changeColourEvent?.Invoke();
     }
 }
